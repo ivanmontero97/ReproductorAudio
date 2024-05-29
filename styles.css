@@ -1,0 +1,155 @@
+/* styles.css */
+body {
+    margin: 0;
+    background: #222;
+    font-family: system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+  }
+  
+  .container {
+    background: rgb(95, 218, 95);
+    width: 40%; /* Cambia según sea necesario */
+    height: 70%; /* Cambia según sea necesario */
+    border: 2px solid black; /* Añadido para visualizar mejor el contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 10px 8px #1c3716;
+
+  }
+  .item1{
+    height:45%;
+    background-color: green;
+    width:80%;
+    border-radius:10px;
+    margin:1%;
+    box-shadow: 5px 10px 8px #1c3716;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerImg{
+  background-color: #04AA6D;
+  width:180px;
+  height:180px;
+  border-radius: 50%;
+  border:10px solid rgb(4, 136, 40,0.3);
+}
+  .item2{
+    height:20%;
+    width:80%;
+    margin:1%;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+  }
+  .item2 > * {
+    margin: 0;
+  }
+  .item3{
+    height:20%;
+    width:80%;
+    border:2px solid black;
+    margin:1%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .controlContainer{
+    width:60%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+  #playCircle{
+    background-color: #222;
+    width:20%;
+    height: 60%;
+    display: flex;
+    border-radius: 45%;
+    justify-content: center;
+    align-items: center;
+  }
+  .material-symbols-outlined:hover{
+    transform:scale(1.2);
+    cursor: pointer;
+    box-shadow: 5px 10px 8px #888888;
+  }
+
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 80%; /* Full-width */
+    height: 20%; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 10px;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 5%; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 10px;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  p{
+    margin:0;
+  }
+  img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
+
+  @keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.containerImg img.rotating {
+    animation: rotate360 4s linear infinite;
+}

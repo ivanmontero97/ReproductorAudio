@@ -1,0 +1,23 @@
+[
+	{
+    	"name": "Canción 1",
+    	"artist": "Pajaro loco",
+    	"path": "./Musica/music_dave_miles_still_learning_004.mp3",
+    	"duration": "0:25",
+    	"img":"./imagenes/pajaroLoco.jpg"
+	},
+	{
+    	"name": "Canción 2",
+    	"artist": "Buggs Bunny",
+    	"path": "./Musica/buggsBunny.mp3",
+    	"duration": "0:25",
+    	"img":"./imagenes/buggsBunny.jpg"
+	},
+	{
+    	"name": "Canción 3",
+    	"artist": "Tasmania",
+    	"path": "./Musica/tasmania.mp3",
+    	"duration": "0:25",
+    	"img":"./imagenes/tasmania.jpg"
+	}
+]
